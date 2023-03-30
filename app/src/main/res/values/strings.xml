@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AcronymsMeaningsApp</string>
+    <string name="type_your_word">Type your word here</string>
+    <string name="acronym_meaning">Acronym Meaning</string>
+    <string name="acronym_meaning_for_1_s">Acronym meaning for : %1$s</string>
+    <string name="no_data_found_for_1_s">No data found for : %1$s</string>
+</resources>
