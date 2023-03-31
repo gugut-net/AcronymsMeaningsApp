@@ -65,7 +65,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
                 app:layoutManager="LinearLayoutManager"
-                tools:listitem="@layout/item_acronym_item" />
+                tools:listitem="@layout/item_acronym" />
         </RelativeLayout>
     </LinearLayout>
 

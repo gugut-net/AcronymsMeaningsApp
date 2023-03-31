@@ -69,7 +69,7 @@ class HomeFragment: Fragment() {
     }
 
     private fun setObservers() {
-        homeFragmentViewModel.weatherData.observe(viewLifecycleOwner) {
+        homeFragmentViewModel.resultData.observe(viewLifecycleOwner) {
             it?.let {
                 when (it.status) {
                     LiveDataResource.Status.LOADING -> {
