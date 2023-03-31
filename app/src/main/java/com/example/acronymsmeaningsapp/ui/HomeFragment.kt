@@ -79,7 +79,8 @@ class HomeFragment: Fragment() {
                         it.data?.successResponse?.let { it1 ->
                             binding.clProgressbar.hide()
                             if (it1.isNotEmpty()) {
-                                binding.tvAcronymMeaning.text = getString(R.string.acronym_meaning_for_1_s, binding.etAcronymWord.text.toString())
+                                binding.tvAcronymMeaning.text =
+                                    getString(R.string.acronym_meaning_for_1_s, binding.etAcronymWord.text.toString())
                                 binding.etAcronymWord.setText("")
                                 it1[0]?.lfs?.let { it2 ->
                                     acronymResults.clear()
@@ -90,7 +91,8 @@ class HomeFragment: Fragment() {
                                 //Log.d(TAG, "no data found")
                                 acronymResults.clear()
                                 acronymResultsAdapter.notifyDataSetChanged()
-                                binding.tvAcronymMeaning.text = getString(R.string.no_data_found_for_1_s, binding.etAcronymWord.text.toString())
+                                binding.tvAcronymMeaning.text =
+                                    getString(R.string.no_data_found_for_1_s, binding.etAcronymWord.text.toString())
                                 binding.etAcronymWord.setText("")
                             }
                         }
